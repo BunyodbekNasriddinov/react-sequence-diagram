@@ -50,6 +50,7 @@ export default function Menu(props) {
 	}
 
 	const { message } = pending;
+	const { fixedRevision } = reduxState.backend;
 	const svgName = `process.svg`;
 
 	// Show both Undo and Redo if one of them shows, but enable only the
