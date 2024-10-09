@@ -319,6 +319,7 @@ export default class App extends React.Component {
 				/>
 
 				<div
+					id='diagram-root'
 					onMouseMove={handleMouseMove}
 					style={{ position: 'relative', height: layout.height + 50 }}
 				>

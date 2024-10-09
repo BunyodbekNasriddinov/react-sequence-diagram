@@ -51,7 +51,6 @@ export default function Menu(props) {
 
 	const { message } = pending;
 	const { fixedRevision } = reduxState.backend;
-	const svgName = `process.svg`;
 
 	// Show both Undo and Redo if one of them shows, but enable only the
 	// one that can be clicked. We do this so that if the user frantically
@@ -110,16 +109,6 @@ export default function Menu(props) {
 				>
 					Cancel <Kbd>Esc</Kbd>
 				</Button>
-			)}
-			{(showShare || fixedRevision) && (
-				<a
-					id='download-as-svg'
-					{...menuItemProps}
-					download={svgName}
-					href={`data:image/svg+xml,${exportSvg(reduxState.core.present)}`}
-				>
-					Download as SVG
-				</a>
 			)}
 			{showTip && (
 				<span className='tip'>
