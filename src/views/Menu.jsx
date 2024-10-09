@@ -116,7 +116,7 @@ export default function Menu(props) {
           id="download-as-svg"
           {...menuItemProps}
           download={svgName}
-          href={`data:image/svg+xml,${exportSvg(reduxState.core.present)}`}
+          href={`data:image/svg+xml,process`}
         >
           Download as SVG
         </a>

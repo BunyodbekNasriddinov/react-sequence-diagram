@@ -321,7 +321,6 @@ export default class App extends React.Component {
 				<div
 					onMouseMove={handleMouseMove}
 					style={{ position: 'relative', height: layout.height + 50 }}
-					id='diagram-root'
 				>
 					{mapWithSameDomOrder(objects, this.objectsMemory, (object) => (
 						<Objekt
