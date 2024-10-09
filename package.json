@@ -2,11 +2,12 @@
 	"name": "sequence-diagram-react",
 	"private": false,
 	"version": "0.0.0",
+	"main": "./src/SequenceDiagram.jsx",
 	"type": "module",
 	"author": {
 		"name": "BunyodbekNasriddinov",
 		"email": "nasriddinoffbunyodbek@gmail.com",
-		"url": "https://github.com/BunyodbekNasriddinov"
+		"url": "https://github.com/BunyodbekNasriddinov/sequence-diagram-react"
 	},
 	"scripts": {
 		"dev": "vite",
