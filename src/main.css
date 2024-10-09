@@ -1,0 +1,76 @@
+body,
+html,
+#root {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+	/* To make their width match the potentially large width of the diagram */
+	min-width: 100%;
+	display: inline-block;
+}
+
+#root {
+	/* To make the footer always appear below the fold */
+	min-height: 100vh;
+}
+
+@keyframes tipKeyframes {
+	0% {
+		transform: translateX(0px);
+	}
+	30% {
+		transform: translateX(30px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.tip {
+	animation: tipKeyframes 3s ease-out 5;
+	display: inline-block;
+	font-size: 17px;
+}
+
+.menu-button:hover {
+	background-color: #eee !important;
+}
+
+.menu-button:active {
+	background-color: #fff !important;
+}
+
+.remove-button:hover {
+	background-color: #f55 !important;
+	color: black !important;
+}
+
+.message-button:hover {
+	background: #8ecaef !important;
+	border-image: none !important;
+	border-color: #8ecaef !important;
+	color: black !important;
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	background: #111;
+	padding: 20px 0;
+}
+
+a {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+a img {
+	margin-right: 0.3em;
+}
