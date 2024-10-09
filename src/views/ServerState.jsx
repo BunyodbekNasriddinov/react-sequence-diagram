@@ -1,3 +1,4 @@
+import React from 'react';
 import * as ac from '../reducers';
 
 export default function ServerState(props) {
