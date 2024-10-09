@@ -1,6 +1,6 @@
 import React from "react";
 import { ActionCreators } from "redux-undo";
-import ServerState from "./ServerState";
+// import ServerState from "./ServerState";
 import * as ac from "../reducers";
 import { boxShadow, backgroundLight } from "./common";
 import Kbd from "./Kbd";
@@ -136,7 +136,7 @@ export default function Menu(props) {
           </span>
         </span>
       )}
-      <ServerState reduxState={reduxState} />
+      {/* <ServerState reduxState={reduxState} /> */}
     </div>
   );
 }
