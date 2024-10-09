@@ -1,10 +1,10 @@
 {
 	"name": "sequence-diagram-react",
 	"private": false,
-	"version": "0.0.1",
-	"main": "./src/SequenceDiagram.jsx",
+	"version": "0.0.2",
+	"main": "./src/index.js",
+	"source": "./src/SequenceDiagram.jsx",
 	"type": "module",
-	"types": "dist/index.d.ts",
 	"author": {
 		"name": "BunyodbekNasriddinov",
 		"email": "nasriddinoffbunyodbek@gmail.com",

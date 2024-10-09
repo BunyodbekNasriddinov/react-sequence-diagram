@@ -17,4 +17,4 @@ const SequenceDiagram = () => {
 	);
 };
 
-export { SequenceDiagram, store };
+export default SequenceDiagram;

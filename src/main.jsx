@@ -8,7 +8,7 @@ import { ActionCreators } from 'redux-undo';
 import { initMouseOverlay } from './debug/mouseDebug';
 import './main.css';
 import * as ac from './reducers';
-import { SequenceDiagram } from './SequenceDiagram';
+import SequenceDiagram from './SequenceDiagram';
 
 const searchParams = new URLSearchParams(window.location.search);
 if (searchParams.has('mouseDebug')) {
