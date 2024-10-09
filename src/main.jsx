@@ -1,14 +1,11 @@
 import debounce from 'lodash.debounce';
 import isEqual from 'lodash.isequal';
-import React from 'react';
-import { createRoot } from 'react-dom/client';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { thunk } from 'redux-thunk';
 import { ActionCreators } from 'redux-undo';
 import { initMouseOverlay } from './debug/mouseDebug';
-import './main.css';
 import * as ac from './reducers';
-import SequenceDiagram from './SequenceDiagram';
+import './main.css';
 
 const searchParams = new URLSearchParams(window.location.search);
 if (searchParams.has('mouseDebug')) {
@@ -59,14 +56,14 @@ function createNewDiagram() {
 }
 
 // Store root instance outside to avoid calling createRoot multiple times
-const container = document.getElementById('root');
-const root = createRoot(container);
+// const container = document.getElementById('root');
+// const root = createRoot(container);
 
 // Setup continuous render
-function doRender() {
-	root.render(<SequenceDiagram />);
-}
-store.subscribe(doRender);
+// function doRender() {
+// 	root.render(<SequenceDiagram />);
+// }
+// store.subscribe(doRender);
 
 // Setup continuous save
 const debouncedSaveDiagram = debounce((diagram) => {
@@ -98,7 +95,7 @@ if (!revision) {
 }
 
 // Initial render
-doRender();
+// doRender();
 
 // These functions support automated end-to-end tests.
 // They also enable export and import of diagrams until there's a
