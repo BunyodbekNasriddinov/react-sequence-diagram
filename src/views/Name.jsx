@@ -37,8 +37,6 @@ export default function Name(props) {
 	}
 
 	function onChange(e) {
-		console.log({ e });
-
 		dispatch(ac.editComponentName(component.id, e.target.value, false));
 	}
 
