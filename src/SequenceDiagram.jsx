@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { act } from 'react';
 import { dispatch, store } from './main';
 import App from './views/App';
 
-const SequenceDiagram = (state) => {
+const SequenceDiagram = (diagram) => {
+	const actions = store.getState();
+
 	return (
 		<App
-			state={state || store.getState()}
+			state={
+				diagram
+					? { ...actions, core: { ...actions.core, present: { ...diagram } } }
+					: actions
+			}
 			dispatch={dispatch}
 		/>
 	);
