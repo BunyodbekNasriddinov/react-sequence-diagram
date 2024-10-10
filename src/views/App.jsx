@@ -72,7 +72,8 @@ export default class App extends React.Component {
 				? downPos - idToStylePos(movedComponent.id)
 				: e.nativeEvent.offsetY + 10; /* message name background border */
 
-			const { objects, messages } = this.props.state.core.present;
+			const { objects, messages } =
+				this.props.diagram || this.props.state.core.present;
 			const components = isMovingObject ? objects : messages;
 			let pendingComponents = components.map((value) => {
 				return { ...value };
