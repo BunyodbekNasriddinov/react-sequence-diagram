@@ -2,10 +2,10 @@ import React from 'react';
 import { dispatch, store } from './main';
 import App from './views/App';
 
-const SequenceDiagram = () => {
+const SequenceDiagram = (state) => {
 	return (
 		<App
-			state={store.getState()}
+			state={state || store.getState()}
 			dispatch={dispatch}
 		/>
 	);
